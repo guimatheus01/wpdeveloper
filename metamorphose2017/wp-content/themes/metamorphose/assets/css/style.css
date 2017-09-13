@@ -1,0 +1,119 @@
+*{font-family:'Open Sans',sans-serif}
+body{width:100%;height:100%}
+html{width:100%;height:100%}
+div#preloader{height:100%;left:0;position:fixed;top:0;width:100%;z-index:99999;/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f09819+0,ff512f+100 */background: rgb(240,152,25); /* Old browsers */background: -moz-linear-gradient(left,  rgba(240,152,25,1) 0%, rgba(255,81,47,1) 100%); /* FF3.6-15 */background: -webkit-linear-gradient(left,  rgba(240,152,25,1) 0%,rgba(255,81,47,1) 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to right,  rgba(240,152,25,1) 0%,rgba(255,81,47,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09819', endColorstr='#ff512f',GradientType=1 ); /* IE6-9 */}
+#logo{
+    width: 270px;
+    height: 170px;
+    position: fixed;
+    left: 50%;
+    margin-left: -148px;
+    top: 40%;
+    background: url(../img/load-logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    }
+#status{width: 70px;height: 70px;position:fixed;left:50%;margin-left: -47px;top: 62%;background: url(../img/favicon.png);background-size: cover;-webkit-animation: rotating 1.5s linear infinite;}
+header{height:550px;background:url(../img/bg_header.png) center center;/* /* background-attachment:fixed; *//*  *//* background-size:cover; */ */background-repeat:no-repeat;;}
+.logo{background:url(../img/logo_retina.png);background-size:contain;background-repeat:no-repeat;width: 300px;margin-top: 15px;margin-left:15px;display:block;}
+.projeto{padding-top:6em;margin-bottom:9em}
+.projeto span{font-size:12pt}
+.logo-projeto{margin:auto;/* margin-top:4em */}
+.crono_day{margin-right:2em}
+.preletores{background: url(../img/preletores.jpg) center center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;padding-top:5em;padding-bottom:4em;}
+.programacao{padding-top:5em}
+.title{color:#fff;font-weight:700;text-align:center;margin-bottom:3em}
+.title_orange{color:#FF852D;font-weight:700;text-align:center;margin-bottom:2em}
+.video_institucional{margin-top:7em}
+.envagelismo{background:url(../img/bg_envangelismo.png) center center;background-attachment:fixed;background-size:cover;background-repeat:no-repeat;padding-top:5em;padding-bottom:4em;margin-top:5em}
+.participar{padding-top:5em}
+.txt_evangelismo{padding: 0 5em 6em;}
+.local{height: 450px!important;margin-top:7em;}
+.local_frame{height:300px!important}
+.panel-group{float:right}
+footer{background: url(../img/footer.jpg) center center;background-size:cover;background-repeat:no-repeat;}
+.logo_footer{max-width:600px;margin:auto;margin-top:7em}
+.link_social{color:#fff!important;display:block;margin-top:2em;text-align: center;}
+.direitos_footer{color:#fff;margin-top: 8em;}
+.img_preletor{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%);transition:.4s}
+.img_preletor:hover{transition:.4s;-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%)}
+.left-panel .panel-default{border-bottom-left-radius:7px;border-bottom-right-radius:7px;border-bottom:2px #DDD solid}
+.left-panel .panel-default .panel-body{padding:0;margin:0}
+.left-panel .panel-default .panel-body .col-md-12{margin:0;padding:0}
+.left-panel .panel-default .panel-body .thumbnail{border:none;margin:0;padding:0;position:relative}
+.left-panel .panel:hover img{opacity:.8}
+.left-panel .panel-default .panel-body .icerik-bilgi{margin:30px}
+.icerik-bilgi .btn-primary{float:right;margin-bottom:30px}
+.icerik-bilgi h4{margin-bottom: 50px;color: #ffffff;margin-top: -13px;margin-left: 5px;font-weight: bold;}
+.icerik-bilgi h4:hover{color:#F3B285;text-decoration:none}
+.icerik-bilgi a:hover{text-decoration:none}
+.icerik-bilgi p{margin-bottom:30px;line-height:25px;font-size:16px}
+.icerik-bilgi .btn-group{float:right;margin-top:-40px}
+.btn-group a{font-size:14pt;color:#fff}
+.btn-group .btn-facebook:hover{color:#3B5998}
+.btn-group .btn-twitter:hover{color:#55ACEE}
+.btn-group .btn-google:hover{color:#DD4B39}
+div#clock{font-size:21pt;color:#fff;display:block;text-align:center;padding-top:7em;font-weight:bolder}
+.txt_banner{color:#fff;font-weight:100;font-size:25pt;margin-top:1.5em}
+.item_crono{display:inline-block}
+.txt_crono{font-size:10pt;text-align:center;display:block;margin-top:-25px}
+.num_crono{display:block;font-size:60pt}
+@media(min-width:767px) {
+.navbar{padding:20px 0;-webkit-transition:background .5s ease-in-out,padding .5s ease-in-out;-moz-transition:background .5s ease-in-out,padding .5s ease-in-out;transition:background .5s ease-in-out,padding .5s ease-in-out}
+.top-nav-collapse{padding:0 0 15px;background:rgba(0,0,0,0.9)}
+}
+@media (max-width:1200px) {
+.navbar-nav>li>a{font-size:smaller}
+.navbar-right{float:left!important;margin-left:-15px}
+}
+@media (max-width:767px) {
+.logo{width:220px}
+.navbar-nav>li>a{font-size:initial;text-align:center}
+.navbar-right{float:none!important;margin-left:inherit}
+}
+@media(max-width: 480px) {
+.top-nav-collapse{background:#000}
+.cronometro{margin-top:-5em}
+.crono_day{margin-right:0;display:block}
+.num_crono{font-size:45pt}
+.txt_crono{margin-top:-17px}
+.projeto{text-align:justify!important}
+.txt_banner{font-size:large}
+.logo-projeto{padding:3em;margin-top:-4em}
+.list-unstyled{text-align:center}
+.video_institucional{margin-top:3em}
+.panel{margin-top:4em}
+.txt_evangelismo{padding:initial;text-align:justify}
+.local{height:200px!important}
+.logo_footer{width:100%}
+.link_social{text-align:center}
+#status{top:85%}
+}
+.gmweb{color:#ccc;margin-top:1em;margin-bottom:5em}
+.icon_gmweb{width:25px;height:25px;display:inline-block;background: url(../img/logo_gmweb.png) left;transition:0.3s;background-repeat:no-repeat;background-size: cover;}
+.icon_gmweb:hover{transition: 0.3s;width: 135px;}
+.hvr-grow{display:inline-block;vertical-align:middle;-webkit-transform:translateZ(0);transform:translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform}
+.hvr-grow:hover,.hvr-grow:focus,.hvr-grow:active{-webkit-transform:scale(1.1);transform:scale(1.1)}
+.patrocinio{
+    margin: 5em auto;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 5em;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.img_evangelismo{
+    border: 8px solid #fff;
+    max-width: 250px;
+    display: inline-block;
+}
+.inscrever{
+    /* background: #fff; */
+    /* padding: 15px; */
+}
