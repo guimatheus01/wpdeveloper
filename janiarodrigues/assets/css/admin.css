@@ -1,0 +1,63 @@
+/* This style loads in admin panel */
+
+.wpb-layout-element-button .vc-block {
+	background-image: url(iconVC.png);
+	background-size: cover;
+}
+.settings-error.notice{display:block;}
+
+/*Admin Style */
+
+#primary_menu .typography-align, #primary_menu .typography-transform, #footer_menu1 .typography-align, 
+#footer_menu1 .typography-transform, #typ_body .typography-align, #typ_h1 .typography-align, 
+#typ_h1 .typography-transform, #typ_h2 .typography-align, #typ_h2 .typography-transform,
+#typ_h3 .typography-align, #typ_h3 .typography-transform, #typ_h4 .typography-align, 
+#typ_h4 .typography-transform, #typ_h5 .typography-align, #typ_h5 .typography-transform,
+#typ_h6 .typography-align, #typ_h6 .typography-transform, #floris_opt-typ_h1 .typography-script, 
+#floris_opt-typ_h2 .typography-script, #floris_opt-typ_h3 .typography-script, 
+#floris_opt-typ_h4 .typography-script, #floris_opt-typ_h5 .typography-script, 
+#floris_opt-typ_h6 .typography-script, #floris_opt-primary_menu .typography-script, #floris_opt-footer_menu1 .typography-script, 
+#floris_opt-typ_body .typography-script {opacity:1;z-index: 1;}
+#skins_color .skins_color_previewer, #redux-header .rAds span, .updated.redux-messageredux-notice.redux-notice{display:none !important;}
+#floris_opt-woo_products img, #floris_opt-cart_page img, #floris_opt-checkout_page img{max-width:100%;}
+.floris-title{background: url(../../images/vc_icons.png) 0 -352px;}
+.floris-accordion{background: url(../../images/vc_icons.png) 0 -128px;}
+.floris-banner{background: url(../../images/vc_icons.png) 0 -288px;}
+.floris-banner-slider{background: url(../../images/vc_icons.png) 0 -384px;}
+.floris-cat-w-prod{background: url(../../images/vc_icons.png) 0 -416px;}
+.floris-contact{background: url(../../images/vc_icons.png) 0 -224px;}
+.floris-maps{background: url(../../images/vc_icons.png) 0 -256px;}
+.floris-img-box{background: url(../../images/vc_icons.png);background-position: 0 0;}
+.floris-instagram{background: url(../../images/vc_icons.png) 0 -64px;}
+.floris-posts{background: url(../../images/vc_icons.png) 0 -448px;}
+.floris-products{background: url(../../images/vc_icons.png) 0 -96px;}
+.floris-cat-prod{background: url(../../images/vc_icons.png) 0 -160px;}
+.floris-cat-w-filter{background: url(../../images/vc_icons.png) 0 -192px;}
+.floris-cat-single{background: url(../../images/vc_icons.png) 0 -480px;}
+.floris-subscribe{background: url(../../images/vc_icons.png) 0 -320px;}
+.floris-team{background: url(../../images/vc_icons.png) 0 -32px;}
+.floris-video{background: url(../../images/vc_icons.png) 0 -512px;}
+.prod_img_cover_d{overflow: hidden !important;}
+.prod_img_cover_d li{float: left;margin-right: 12px;}
+.prod_img_cover_d li:last-child{margin-right: 0;}
+.updated.floris_updated {position: relative !important;}
+.updated.floris_updated .notice-dismiss {position: absolute !important;bottom: 0 !important;}
+.updated.floris_updated .notice-dismiss:before {display: inline-block !important;}
+.taxonomy-product_cat .cs-field-fieldset .cs-inner .cs-title{width: 20%;}
+.taxonomy-product_cat .cs-field-fieldset .cs-inner .cs-fieldset{margin-left: 20%;}
+.taxonomy-product_cat .cs-field-fieldset .cs-inner .cs-fieldset input{width: 100%;}
+.taxonomy-product_cat .cs-field-fieldset .cs-inner .cs-title h4{padding-top: 7px;}
+.taxonomy-product_cat .cs-field-fieldset .cs-element{padding: 7px 10px;}
+.floris_notice_diss{position: relative;}
+#icl_lang_sel_type_list, #icl_lang_sel_type_list + label, #icl_lang_sel_stype,#floris_opt-share-slides .redux_slides_add_remove, #floris_opt-soc-slides .redux_slides_add_remove{display: none;}
+#floris_opt-share-slides .button.redux-slides-add.button-primary{margin: 0;}
+
+.validation_activate_buttons{box-shadow: none !important;cursor: pointer;border: none !important;text-decoration: none !important;border-radius: 4px;color: #fff;line-height: 40px;padding: 0px 20px;display: inline-block;font-weight: 600;font-size: 14px;outline: none !important;}
+.validation_activate_buttons:focus{color: #fff;}
+#validation_activate{ background: #3498db;margin-right: 5px;}
+#validation_deactivate{ background: #e83737;}
+#validation_activate:hover{background: #2c8ac8;color: #fff;}
+#validation_deactivate:hover{background: #d23333;color: #fff;}
+#purchase_code_verification{background: #e5e5e5;color: #777;font-size: 13px;padding: 0 7px;border-radius: 5px;line-height: 30px;font-weight: 600;}
+#purchase_code_verification:focus{background: #ccc;}
+#popup_license_button {display: none;}
