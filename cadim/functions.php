@@ -263,8 +263,50 @@ function slider_banner() {
 
 }
 add_action( 'init', 'slider_banner', 0);
+/************************************************/
+/**************** EXAMES ****************/
+/**********************************************/
+// Register Custom Post Type
+function Exames() {
 
+    $labels = array(
+        'name'                  => 'Exames',
+        'singular_name'         => 'Exame',
+        'menu_name'             => 'Exames',
+        'name_admin_bar'        => 'Exames',
+        'all_items'             => 'Todos os Exames',
+        'add_new_item'          => 'Adicionar um Exame',
+        'add_new'               => 'Edicionar Exame',
+        'new_item'              => 'Novo Exame',
+        'edit_item'             => 'Editar Exame',
+        'update_item'           => 'Atualizar Exame',
+        'view_item'             => 'Ver Exame',
+        'view_items'            => 'Ver Exames',
+        'search_items'          => 'Procurar Exames',
+    );
+    $args = array(
+        'label'                 => 'Exame',
+        'description'           => 'Inserção de todos os exames prestados pelo cadim.',
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'thumbnail', ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'menu_icon'             => 'dashicons-screenoptions',
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,        
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'exames', $args );
 
+}
+add_action( 'init', 'Exames', 0 );
 
 
 
