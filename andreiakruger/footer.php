@@ -94,6 +94,9 @@
         <div class="bottom-footer">
             <div class="container">
                 <div class="copyright-text text-center"><?php echo esc_attr( get_theme_mod( 'madang_footnote',  '&copy; 2015-2017 Madang, Inc. ALL RIGHT RESERVED.' ) ); ?></div>
+                <div class="copyright-text text-center">
+                    <a class="onewave" href="http://gsw.net.br/" target="_blank" title="A One Wave é uma empresa de soluções completas e personalizadas na web, para que sua empresa posicione-se no topo do mercado virtual."></a>
+                </div>
             </div>
         </div>
     </footer>
