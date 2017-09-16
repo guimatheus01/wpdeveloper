@@ -309,8 +309,11 @@ function type_apoio() {
 
 
 
-
-
+function skyverge_change_empty_cart_button_url() {
+    return get_site_url('/');
+    //Can use any page instead, like return '/sample-page/';
+}
+add_filter( 'woocommerce_return_to_shop_redirect', 'skyverge_change_empty_cart_button_url' );
 
 
 /************************************************/
@@ -339,7 +342,7 @@ function my_login_logo_url() {
 add_filter( 'login_headerurl', 'my_login_logo_url' );
  
 function my_login_logo_url_title() {
-    return 'GSW Agência Web - Criação de sites em Cuiabá';
+    return 'GMWEBDESIGNER - Websites e Soluções.';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
@@ -392,7 +395,7 @@ add_action('wp_before_admin_bar_render', 'my_custom_logo');
 
 // Customizar o Footer do WordPress
 function remove_footer_admin () {
-    echo '© <a href="http://gsw.net.br/">GSW Agência Web </a> - Criação de sites em Cuiabá';
+    echo '© <a href="http://www.gmwebdesigner.com.br/">GMWEBDESIGNER </a> - Obrigado por acreditar em nós !';
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 

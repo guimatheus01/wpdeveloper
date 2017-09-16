@@ -50,7 +50,7 @@
 																Compre Agora<small>Garanta seu legislendo agora, pagando apenas 1 vez.</small>
 																</div> <!-- end .pricing-table-heading -->
 																<div class="pricing-table-button">
-																	<a href="" class="button white border" data-toggle="modal" data-target="#modalPedido">Comprar</a>
+																	<a href="?add-to-cart=129" class="button white border">Comprar</a>
 																	</div> <!-- end .pricing-table-button -->
 																	</div> <!-- end .inner -->
 																	</div> <!-- end .pricing-table -->
@@ -60,19 +60,5 @@
 																		</div> <!-- end .inner -->
 																		</section> <!-- end .section -->
 																		<?php endwhile; // end of the loop. ?>
-																		<div class="modal fade" id="modalPedido" tabindex="-1" role="dialog" aria-labelledby="modalPedidoLabel">
-																			<div class="modal-dialog" role="document">
-																				<div class="modal-content">
-																					<div class="modal-header">
-																						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-																						<h4 class="modal-title" id="modalPedidoLabel">Faça seu Pedido</h4>
-																					</div>
-																					<div class="modal-body">
-																						<?php echo do_shortcode( '[contact-form-7 id="33" title="Formulario de Pedido"]' ); ?>
-																					</div>
-																					<div class="modal-footer">
-																					</div>
-																				</div>
-																			</div>
 																		</div>
 																		<?php get_footer(); ?>
