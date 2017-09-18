@@ -59,7 +59,7 @@ class td_block_trending_now extends td_block {
             $buffy .= $td_block_layout->open_row();
 
             $buffy .= '<div class="td-trending-now-wrapper" id="' . $this->block_uid . '" data-start="' . esc_attr($navigation) . '">';
-                $buffy .= '<div class="td-trending-now-title">' . __td('Trending Now', TD_THEME_NAME) . '</div><div class="td-trending-now-display-area">';
+                $buffy .= '<div class="td-trending-now-title">' . __td('ÚLTIMAS NOTÍCIAS', TD_THEME_NAME) . '</div><div class="td-trending-now-display-area">';
 
                 foreach ($posts as $post_count => $post) {
 

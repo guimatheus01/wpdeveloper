@@ -53,12 +53,12 @@ $buffy .= '</aside></div>';
 
 // column 2 description
 $buffy .= '<div class="' . $td_social_enabled . '"><aside class="footer-text-wrap">';
-    $buffy .= '<div class="block-title"><span>' . __td('ABOUT US', TD_THEME_NAME) . '</span></div>';
+    $buffy .= '<div class="block-title"><span>' . __td('SOBRE', TD_THEME_NAME) . '</span></div>';
     $buffy .= stripcslashes($td_footer_text);
 
     if (!empty($td_footer_email)) {
         $buffy .= '<div class="footer-email-wrap">';
-        $buffy .= __td('Contact us', TD_THEME_NAME) . ': <a href="mailto:' . $td_footer_email  . '">' . $td_footer_email . '</a>';
+        $buffy .= __td('Contato', TD_THEME_NAME) . ': <a href="mailto:' . $td_footer_email  . '">' . $td_footer_email . '</a>';
         $buffy .= '</div>';
     }
 $buffy .= '</aside></div>';
@@ -66,7 +66,7 @@ $buffy .= '</aside></div>';
 // column 3 social icons
 if(td_util::get_option('tds_footer_social') != 'no') {
 	$buffy .= '<div class="td-pb-span4"><aside class="footer-social-wrap td-social-style-2">';
-	    $buffy .= '<div class="block-title"><span>' . __td('FOLLOW US', TD_THEME_NAME) . '</span></div>';
+	    $buffy .= '<div class="block-title"><span>' . __td('SIGA-NOS', TD_THEME_NAME) . '</span></div>';
 	    //get the socials that are set by user
 	    $td_get_social_network = td_options::get_array('td_social_networks');
 

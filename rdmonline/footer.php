@@ -53,6 +53,7 @@ if (td_util::get_option('tds_footer') != 'no') {
     <div class="td-sub-footer-container td-container-wrap <?php echo td_util::get_option('td_full_footer'); ?>">
         <div class="td-container">
             <div class="td-pb-row">
+
                 <div class="td-pb-span td-sub-footer-menu">
                         <?php
                         wp_nav_menu(array(
@@ -80,6 +81,9 @@ if (td_util::get_option('tds_footer') != 'no') {
 
                     echo $tds_footer_copyright;
                     ?>
+                </div>
+                <div class="box-onewave">
+                    <a class="onewave" href="http://onewave.com.br/" target="_blank" title="A One Wave é uma empresa de soluções completas e personalizadas na web, para que sua empresa posicione-se no topo do mercado virtual."></a>
                 </div>
             </div>
         </div>
