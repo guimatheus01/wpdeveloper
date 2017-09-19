@@ -9,7 +9,9 @@
                     while ( $loop->have_posts() ) : $loop->the_post();
                  ?>
                 <div class="environment-banner-one-layer">
-                    <img src="<?php the_post_thumbnail_url('full'); ?>" alt="">
+                    <a href="<?php the_field('link_do_banner'); ?>">
+                        <img src="<?php the_post_thumbnail_url('full'); ?>" alt="">
+                    </a>
                 </div>
                 <?php endwhile; ?>
             </div>
