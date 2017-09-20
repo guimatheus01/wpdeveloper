@@ -152,8 +152,8 @@
             <div class="row">
                 <div class="col-md-12 team_menu">
                     <div class="row titleRow text-left">
-                        <h5>our doctors</h5>
-                        <h2>experienced team</h2>
+                        <h5>Conheça Nosso</h5>
+                        <h2>Dr. Carlos</h2>
                     </div>
                 </div>
                <div class="col-md-12 team_descss">
@@ -165,20 +165,17 @@
                                 </div>
                                 <div class="media-body">
                                     <div class="row titleRow text-left">
-                                        <h2>Johnathan doe</h2>
-                                        <h5>orthopedic surgon</h5>
+                                        <h2>Dr. Carlos Alberto Ferreira</h2>
+                                        <h5>CRM.MT 2640</h5>
                                     </div>
-                                    <p>Fusce ut velit semper, semper arcu quis, aliquam sed justo et sem varius euismod. In ac justo urna unt nisl semper sapien  <br><br> Nec imperdiet augue pretium. Curabitur eu ligula dum libero at, tincidunt sem.</p>
-                                    <ul class="social_list">
+                                    <p>Reponsavel tecnico do cadim.</p>
+                                    <!-- <ul class="social_list">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
+                                    </ul> -->
                                 </div>
                             </div><!-- Doctor about-->
-                        </div>
-                        <div class="visible-xs view_all_btn_4_mobile">
-                            <a href="doctors.html" class="view_all">view all doctors</a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +194,7 @@
                 </div>
                 <div class="col-sm-4 col-md-3">
                     <div class="row m0">
-                        <a href="#" data-toggle="modal" data-target="#appointmefnt_form_pop" class="view_all">book your appointment</a>
+                        <a href="#" data-toggle="modal" data-target="#appointmefnt_form_pop" class="view_all"></a>
                     </div>
                 </div>
             </div>

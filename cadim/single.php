@@ -1,10 +1,16 @@
-<?php get_header(); ?> 
-<section class="row page_intro">
+<?php get_header();
+
+if (have_posts()) {  while (have_posts()) {  the_post();
+
+$cat = get_the_category(); 
+
+?> 
+ <section class="row page_intro">
         <div class="row m0 inner">
             <div class="container">
                 <div class="row">
-                    <h5>service</h5>
-                    <h2>medicalpro services</h2>
+                    <h5><?php echo $cat['name']; ?></h5>
+                    <h2><?php echo get_the_title(); ?></h2>
                 </div>
             </div>
         </div>
@@ -12,104 +18,79 @@
     
     <section class="row breadcrumbRow">
         <div class="container">
+             <style>
+                .page_intro.row .inner:before{background: url(<?php echo get_the_post_thumbnail_url(); ?>)!important;background-repeat: no-repeat !important;background-position: center center !important;background-size: cover !important;}
+            </style>
             <div class="row inner m0">
                 <ul class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="services.html">services</a></li>
-                            <li><a href="single-service.html">single service</a></li>
-                        </ul>
-                    </li>
-                    <li>heart sergery</li>
+                    <li><a href="<?php echo home_url(); ?>">Home</a></li>
+                    <li><a href="<?php echo home_url('/noticias/' ); ?>">Notícas</a></li>
+                    <li><?php echo get_the_title(); ?></li>
                 </ul>
             </div>
         </div>
     </section>
     
-    <section class="row service_details">
+    <section class="row content_section">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 serviceDetailsSection">                    
-                    <h2 class="post_title"><span class="post_icon"><img src="images/icons/service_block/1.png" alt=""></span>heart sergery</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique vehicula porta. Nullam quis nulla et leo consequat tincidunt. Etiam quis neque dolor. Vestibulum tristique luctus gravida. Nulla nec elit massa. Vivamus eget elit a orci tristique porta id ut risus. Mauris eu facilisis erat. <br><br>Aliquam velit velit, faucibus vel egestas sit amet, ultricies nec elit. Ut molestie nisi vitae nulla scelerisque, quis finibus ante posuere. Phasellus aliquet at turpis pretium blandit. Sed pellentesque tellus ac magna tempor, convallis laoreet neque maximus.</p>
-                    <img src="images/pages/service/1.jpg" alt="" class="img-responsive">
-                    <h4 class="subTitle">SUB HEADING TITLE</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique vehicula porta. Nullam quis nulla et leo consequat tincidunt. Etiam quis neque dolor. Vestibulum tristique luctus gravida. Nulla nec elit massa. Vivamus eget elit a orci tristique porta id ut risus. Mauris eu facilisis erat.</p>
-                    <ul class="list-unstyled post_list">
-                        <li><i class="fa fa-arrow-right"></i>Nulla lobortis quam tellus.</li>
-                        <li><i class="fa fa-arrow-right"></i>Quisque pretium quam.</li>
-                        <li><i class="fa fa-arrow-right"></i>Sed pellentesque tellus ac magna tempor.</li>
-                        <li><i class="fa fa-arrow-right"></i>Curabitur semper enim id accumsan.</li>
-                    </ul>
-                    <p>Aliquam velit velit, faucibus vel egestas sit amet, ultricies nec elit. Ut molestie nisi vitae nulla scelerisque, quis finibus ante posuere. Phasellus aliquet at turpis pretium blandit. Sed pellentesque tellus ac magna tempor, convallis laoreet neque maximus.</p>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h4 class="subTitle">SUB HEADING TITLE</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique vehicula nulla encidunt. Etiam quis neque dolor. </p>
+                <div class="col-sm-12 col-md-8">
+                    <div class="row m0 blog single_post">
+                        <div class="image_row row m0">
+                            <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
                         </div>
-                        <div class="col-sm-6">
-                            <h4 class="subTitle">SUB HEADING TITLE</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique vehicula nulla encidunt. Etiam quis neque dolor. </p>
-                        </div>
+                        <?php the_content(); ?>
+                    </div> <!--Single Post-->
+                    <div class="row m0 tags">TAGS: 
+                    <?php
+                        $posttags = get_the_tags();
+                        if ($posttags) {
+                          foreach($posttags as $tag) {
+                            echo '<a>' .$tag->name. '</a>, '; 
+                          }
+                        }
+                    ?>
                     </div>
-                    <a href="#" class="book_btn">book appointment</a>
-                </div>
-                <div class="col-sm-4 sidebar">
-                    <div class="row m0 widget other_services">
-                        <h5 class="widget_heading">other services</h5>
-                        <ul class="list-unstyled services_list">
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">heart surgery</a></li>
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">dna testing</a></li>
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">general treatment</a></li>
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">cancer care</a></li>
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">emergency services</a></li>
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">ear surgery</a></li>
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">dental care</a></li>
-                            <li><i class="fa fa-arrow-right"></i> <a href="single-service.html">research &amp; development</a></li>
-                        </ul>
-                    </div>
-                    <div class="row m0 quick_block branches">
-                        <div class="row m0 inner">
-                            <div class="row heading m0">
-                                <h5>in your country</h5>
-                                <h3>263 branches</h3>
+                    <div class="widget related row m0">
+                        <h5 class="widget_heading">Relacionados</h5>
+                        <div class="row m0">
+                            <?php
+                               $args = array( 'post_type' => 'post', 'showposts' => 2, 'category_name' => $cat);
+                               $loop = new WP_Query( $args );
+                               while ( $loop->have_posts() ) : $loop->the_post();
+                                    $cat_name = get_the_category();
+                            ?>
+                            <div class="col-sm-6">
+                                <a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                                Em "<?php echo $cat_name['name']; ?>"
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
-                            <a href="contact.html">nearest location</a>
+                            <?php endwhile; ?>
                         </div>
                     </div>
-                    <div class="row m0 quick_block emmergency">
-                        <div class="row m0 inner">
-                            <div class="row heading m0">
-                                <h5>quick help</h5>
-                                <h3>Emergency cases</h3>
+                    <div class="row pager">
+                        <div class="col-sm-6 prev">
+                            <div class="inner row m0">                              
+                                <a><i class="fa fa-arrow-left"></i> Notícia Anterior</a><br>
+                                <?php previous_post_link( '%link' ); ?> 
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
-                            <a href="contact.html">CONTACT US NOW</a>
+                        </div>
+                        <div class="col-sm-6 next">
+                            <div class="inner row m0">
+                                <a>Próxima Notícia <i class="fa fa-arrow-right"></i></a><br>
+                                <?php next_post_link('%link'); ?>
+                            </div>
                         </div>
                     </div>
-                    <div class="row m0 quick_block bill_payments">
-                        <div class="row m0 inner">
-                            <div class="row heading m0">
-                                <h5>smooth and easy</h5>
-                                <h3>online bill payments</h3>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
-                            <a href="contact.html">pay your bill now</a>
-                        </div>
+                    <div class="row m0 widget comments">
+                        <h5 class="widget_heading">Comentários</h5>
+                        <div class="media comment">
+                            <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="5"></div>
+                        </div> <!--Single Comment-->
                     </div>
                 </div>
+                <?php get_sidebar('right'); ?>
             </div>
         </div>
     </section>
-    
-    <section class="row quick_blocks_row quick_blocks_row2">
-        <div class="container">
-            <div class="row">
-                
-            </div>
-        </div>
-    </section>
-<?php get_footer(); ?> 
+
+<?php }; }; get_footer(); ?> 

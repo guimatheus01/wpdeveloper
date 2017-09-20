@@ -14,7 +14,7 @@
             $link_page = home_url();
         }else{
             $title_page = get_bloginfo('name') .' - '. get_the_title();
-            $description_page = the_excerpt();
+            //$description_page = the_excerpt();
             $img_page = (has_post_thumbnail()) ?  get_the_post_thumbnail_url() : get_template_directory_uri() . '/images/logo3.png' ;
             $link_page = get_the_permalink();
         };
@@ -23,9 +23,9 @@
     <title><?php echo $title_page ?></title>
     <meta name="description" content="<?php echo $description_page; ?>" />
     <meta name="robots" content="index, follow"/>
-    <meta name="theme-color" content="#333">
-    <meta name="apple-mobile-web-app-status-bar-syle" content="#333">
-    <meta name="msapplication-navbutton-color" content="#333">
+    <meta name="theme-color" content="#232177">
+    <meta name="apple-mobile-web-app-status-bar-syle" content="#232177">
+    <meta name="msapplication-navbutton-color" content="#232177">
     <link rel="author" href="https://www.facebook.com/guimatheus1"/>
     <link rel="publisher" href="https://www.facebook.com/gswdigital/"/>
     <link rel="canonical" href="<?php echo $link_page ?>"/>

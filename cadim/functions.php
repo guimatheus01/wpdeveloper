@@ -186,6 +186,7 @@ require get_template_directory() . '/inc/extras.php';
  * Custom dropdown menu and navbar in walker class
  */
 require get_template_directory() . '/inc/BootstrapBasicMyWalkerNavMenu.php';
+require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
 
 
 /**
