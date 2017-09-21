@@ -155,5 +155,7 @@
       js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
+    <?php wp_footer(); ?>
 </body>
 </html>

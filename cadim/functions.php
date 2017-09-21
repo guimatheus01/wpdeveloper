@@ -269,7 +269,6 @@ add_action( 'init', 'slider_banner', 0);
 /**********************************************/
 // Register Custom Post Type
 function Exames() {
-
     $labels = array(
         'name'                  => 'Exames',
         'singular_name'         => 'Exame',
@@ -305,10 +304,49 @@ function Exames() {
         'capability_type'       => 'page',
     );
     register_post_type( 'exames', $args );
-
 }
 add_action( 'init', 'Exames', 0 );
-
+/************************************************/
+/**************** VIDEOS ****************/
+/**********************************************/
+// Register Custom Post Type
+function videos() {
+    $labels = array(
+        'name'                  => _x( 'Videos', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'videos', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Videos', 'text_domain' ),
+        'all_items'             => __( 'Todos Videos', 'text_domain' ),
+        'add_new_item'          => __( 'Adicionar Video', 'text_domain' ),
+        'add_new'               => __( 'Novo Video', 'text_domain' ),
+        'new_item'              => __( 'Novo Video', 'text_domain' ),
+        'edit_item'             => __( 'Editar Video', 'text_domain' ),
+        'update_item'           => __( 'Atualizar Video', 'text_domain' ),
+        'view_item'             => __( 'Ver Video', 'text_domain' ),
+        'view_items'            => __( 'Ver todos Videos', 'text_domain' ),
+        'search_items'          => __( 'Pesquisar Video', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'videos', 'text_domain' ),
+        'description'           => __( 'Todos os videos do Cadim', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,        
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'menu_icon'             => 'dashicons-video-alt3',
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'videos', $args );
+}
+add_action( 'init', 'videos', 0 );
 
 
 

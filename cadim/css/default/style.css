@@ -519,7 +519,7 @@ footer .footer_bottom .copyright a{text-transform:uppercase;color:#8595b1;}
 .breadcrumbRow .inner ul li a{color:#404d5f;}
 
 /*----------------------------------------------------------------*/
-.blog{padding:0 0 30px;text-align:left;border-bottom:1px solid #dde5ef;}
+.blog{padding:0 0 30px;text-align:justify;border-bottom:1px solid #dde5ef;}
 .blog + .blog{margin-top:0;padding-top:30px;}
 .blog .media-left{padding-right:30px;}
 .blog .media-left a{display:block;width:262px;}

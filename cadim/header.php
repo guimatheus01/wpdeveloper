@@ -70,6 +70,8 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
+    <?php wp_head(); ?>
+    
     <!--Bootstrap and Other Vendors-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-theme.min.css">
@@ -96,6 +98,8 @@
       <script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>      
     <![endif]-->
     
+    
+
 </head>
 <body class="default home2">
     
