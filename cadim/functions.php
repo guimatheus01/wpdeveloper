@@ -215,7 +215,7 @@ require get_template_directory() . '/inc/template-widgets-hook.php';
 
 
 /************************************************/
-/**************** BANNER PRINCIPAL ****************/
+/************* BANNER PRINCIPAL ****************/
 /**********************************************/
 function slider_banner() {
 
@@ -265,7 +265,7 @@ function slider_banner() {
 }
 add_action( 'init', 'slider_banner', 0);
 /************************************************/
-/**************** EXAMES ****************/
+/******************* EXAMES ********************/
 /**********************************************/
 // Register Custom Post Type
 function Exames() {
@@ -307,7 +307,7 @@ function Exames() {
 }
 add_action( 'init', 'Exames', 0 );
 /************************************************/
-/**************** VIDEOS ****************/
+/******************* VIDEOS ********************/
 /**********************************************/
 // Register Custom Post Type
 function videos() {
@@ -348,6 +348,89 @@ function videos() {
 }
 add_action( 'init', 'videos', 0 );
 
+/************************************************/
+/**************** MEDICOS **********************/
+/**********************************************/
+// Register Custom Post Type
+function medicos() {
+    $labels = array(
+        'name'                  => _x( 'Médicos', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Médicos', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Médicos', 'text_domain' ),
+        'all_items'             => __( 'Todos Médicos', 'text_domain' ),
+        'add_new_item'          => __( 'Adicionar Médico', 'text_domain' ),
+        'add_new'               => __( 'Novo Médico', 'text_domain' ),
+        'new_item'              => __( 'Novo Médico', 'text_domain' ),
+        'edit_item'             => __( 'Editar Médico', 'text_domain' ),
+        'update_item'           => __( 'Atualizar Médico', 'text_domain' ),
+        'view_item'             => __( 'Ver Médico', 'text_domain' ),
+        'view_items'            => __( 'Ver todos Médicos', 'text_domain' ),
+        'search_items'          => __( 'Pesquisar Médico', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'Médicos', 'text_domain' ),
+        'description'           => __( 'Todos os Médicos do Cadim', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'thumbnail'),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,        
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'menu_icon'             => 'dashicons-universal-access-alt',
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'medicos', $args );
+}
+add_action( 'init', 'medicos', 0 );
+
+/************************************************/
+/**************** CONVENIOS ********************/
+/**********************************************/
+// Register Custom Post Type
+function convenio() {
+    $labels = array(
+        'name'                  => _x( 'Convênios', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Convênios', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Convênios', 'text_domain' ),
+        'all_items'             => __( 'Todos Convênios', 'text_domain' ),
+        'add_new_item'          => __( 'Adicionar Convênio', 'text_domain' ),
+        'add_new'               => __( 'Novo Convênio', 'text_domain' ),
+        'new_item'              => __( 'Novo Convênio', 'text_domain' ),
+        'edit_item'             => __( 'Editar Convênio', 'text_domain' ),
+        'update_item'           => __( 'Atualizar Convênio', 'text_domain' ),
+        'view_item'             => __( 'Ver Convênio', 'text_domain' ),
+        'view_items'            => __( 'Ver todos Convênios', 'text_domain' ),
+        'search_items'          => __( 'Pesquisar Convênio', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'Médicos', 'text_domain' ),
+        'description'           => __( 'Todos os Convênio do Cadim', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'thumbnail'),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,        
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'menu_icon'             => 'dashicons-grid-view',
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'convenio', $args );
+}
+add_action( 'init', 'convenio', 0 );
 
 
 
@@ -445,3 +528,5 @@ function remove_footer_admin () {
     echo '© <a href="http://gsw.net.br/">OneWave Digital</a> - Criação de Sites em Cuiabá';
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
+
+

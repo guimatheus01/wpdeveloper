@@ -28,7 +28,7 @@
             <div class="col-sm-12 col-md-8 blog_list">
                 <?php
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                    $args = array( 'post_type' => 'post', 'showposts' => 2, 'paged'=>$paged);
+                    $args = array( 'post_type' => 'post', 'showposts' => 6, 'paged'=>$paged);
                                           
                     $temp = $wp_query;
                     $wp_query= null;

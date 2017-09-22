@@ -12,7 +12,7 @@
 <section class="row breadcrumbRow">
     <div class="container">
         <style>
-            .page_intro.row .inner:before{background: url(<?php echo get_the_post_thumbnail_url(); ?>)!important;background-repeat: no-repeat !important;background-position: center center !important;background-size: cover !important;}
+            .page_intro.row .inner:before{background: url('http://www.cadim.com.br/novo/wp-content/uploads/2017/09/GettyImages-520613914.jpg')!important;background-repeat: no-repeat !important;background-position: center center !important;background-size: cover !important;}
         </style>
         <div class="row inner m0">
             <ul class="breadcrumb">
@@ -35,10 +35,10 @@
                 while ( $loop->have_posts() ) : $loop->the_post();
                     $video = get_field('embbed_youtube');
             ?>
-            <div class="col-sm-6 col-md-6 service_block">
+            <div class="col-sm-6 col-md-4 service_block">
                 <a>
                     <div class="row m0 inner">
-                        <div class="row icon"><iframe src="<?php echo $video; ?>" class="embed-responsive-item" frameborder="0"></iframe></div>
+                        <div class="row icon"><iframe src="<?php echo $video; ?>" class="embed-item" frameborder="0"></iframe></div>
                         <a><h4><?php echo strtoupper(get_the_title()); ?></h4></a>
                         <p><?php echo the_excerpt(); ?></p>
                     </div>

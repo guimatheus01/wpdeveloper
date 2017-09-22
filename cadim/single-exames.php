@@ -4,7 +4,6 @@ get_header();
 if (have_posts()) {  while (have_posts()) {  the_post();
 
 ?> 
-
 <section class="row page_intro">
         <div class="row m0 inner">
             <div class="container">
@@ -15,7 +14,6 @@ if (have_posts()) {  while (have_posts()) {  the_post();
             </div>
         </div>
     </section>
-    
     <section class="row breadcrumbRow">
         <div class="container">
         	<style>
@@ -30,7 +28,6 @@ if (have_posts()) {  while (have_posts()) {  the_post();
             </div>
         </div>
     </section>
-    
     <section class="row service_details">
         <div class="container">
             <div class="row">
@@ -89,7 +86,6 @@ if (have_posts()) {  while (have_posts()) {  the_post();
             </div>
         </div>
     </section>
-    
     <section class="row quick_blocks_row quick_blocks_row2">
         <div class="container">
             <div class="row">
@@ -97,6 +93,4 @@ if (have_posts()) {  while (have_posts()) {  the_post();
             </div>
         </div>
     </section>
-    
-
 <?php }; }; get_footer(); ?> 

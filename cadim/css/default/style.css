@@ -705,5 +705,6 @@ footer .footer_bottom .copyright a{text-transform:uppercase;color:#8595b1;}
 .service_tab .tab-content .tab-pane h4{font-family:'Lato',sans-serif;line-height:30px;font-weight:normal;text-transform:uppercase;color:#657188;margin-top:0;margin-bottom:20px;}
 .service_tab .tab-content .tab-pane p{color:#8595b1;line-height:27px;font-size:16px;font-weight:normal;font-family:'Karla',sans-serif;}
 .service_tab .tab-content .tab-pane .view_all{}
+.embed-item{width:100%;height:200px;margin-bottom:-40px;}
 
 /*Service Tab End*/

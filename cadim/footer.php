@@ -1,3 +1,21 @@
+    <section class="row book_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-9">
+                    <div class="row m0">
+                        <h3 class="bannerTitle">AGENDE SEU EXAME</h3>
+                        <h5>Faça seu agendamento online. Simples e pratico ! </h5>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="row m0">
+                        <a href="#appointment" class="view_all">Agende Agora !</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="row">
         <div class="container">
             <div class="row">
