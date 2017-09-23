@@ -22,7 +22,9 @@
 				<div class="copyright">&copy; <?php echo date("Y") ?> - <?php bloginfo('name'); ?> Todos Direitos Reservados.</div>
 			</div> <!-- end .container -->
 		</footer> <!-- end .footer -->
-
+		
+		<?php wp_footer(); ?>
+		
 		<!-- jQuery -->
 		<script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery-1.11.2.min.js"></script>
 		<!-- Bootstrap -->
@@ -37,8 +39,5 @@
 		<script src="s<?php echo get_template_directory_uri() ?>/assets/scripts/Nivo-Lightbox/nivo-lightbox.min.js"></script>
 		<!-- Scripts.js -->
 		<script src="<?php echo get_template_directory_uri() ?>/assets/js/scripts.js"></script>
-
-		<?php wp_footer(); ?>
-
 	</body>
 </html>

@@ -30,7 +30,7 @@
 		<section class="section white">
 			<div class="inner">
 				<div class="container">
-					<div class="about">
+					<div class="about text-justify">
 						<div class="left">
 							<h2>Como Funciona</h2>
 							<p align="justify">Os assuntos abordados pelo LEGISLENDO são divididos em módulos, o que permite uma busca rápida e precisa. São relevantes informações reunidas em único Pen Drive. <br> Aliás, o Pen drive que você está recebendo poderá ser utilizando para arquivamento de outras matérias relevantes de seu interesse, pois, são mais de 6 GB disponíveis para essa finalidade. <br> Simples e eficiente, o LEGISLENDO dispensa complexos conhecimentos em informática, destacando assim seus conhecimentos em gestão parlamentar.</p> 
