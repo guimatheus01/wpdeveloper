@@ -130,11 +130,22 @@
             
             <!-- Collect the nav links, forms, and other content for toggling -->            
             <div class="collapse navbar-collapse" id="main_nav"> 
-            	<?php wp_nav_menu(array(
-                    'menu' => 'primary', 
-                    'container' => 'ul', 
-                    'menu_class' => 'nav navbar-nav navbar-right',
-                )); ?>               
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden-xs book"><a href="#" data-toggle="modal" data-target="#appointmefnt_form_pop">Agende Seu Exame</a></li>
+                </ul>
+                <?php
+                    wp_nav_menu( array(
+                        'menu'              => 'primary',
+                        'theme_location'    => 'primary',
+                        'depth'             => 2,
+                        'container'         => 'ul',
+                        'container_class'   => 'collapse navbar-collapse',
+                        'container_id'      => 'bs-example-navbar-collapse-1',
+                        'menu_class'        => 'nav navbar-nav navbar-right',
+                        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'            => new WP_Bootstrap_Navwalker())
+                    );
+                ?> 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>

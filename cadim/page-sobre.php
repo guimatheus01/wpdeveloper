@@ -127,7 +127,7 @@ if (have_posts()) {  while (have_posts()) {  the_post();
                             <h3>Convênios</h3>
                         </div>
                         <p>Conheça quais convênios a cadim atende.</p>
-                        <a href="<?php echo home_url('exames'); ?>">VEJA OS CONVÊNIOS</a>
+                        <a href="<?php echo home_url('convenios'); ?>">VEJA OS CONVÊNIOS</a>
                     </div>
                 </div>
             </div>

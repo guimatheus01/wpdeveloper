@@ -89,50 +89,12 @@
     <div class="modal fade" id="appointmefnt_form_pop" tabindex="-1" role="dialog" aria-labelledby="appointmefnt_form_pop">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
-                <form action="#" class="row m0 appointment_home_form2">                       
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="fa fa-times-circle-o"></i>
-                        </button>
-                        <h2 class="title">BOOK<br>NOW</h2>
-                        <div class="form_inputs row m0">
-                            <div class="row m0 input_row">
-                                <div class="col-sm-12 col-md-12 col-lg-6 p0">
-                                    <label for="app_fname">First Name</label>
-                                    <input type="text" class="form-control" id="app_fname" placeholder="Your First Name">
-                                </div>
-                                <div class="col-sm-12 col-md-12 col-lg-6 p0">
-                                    <label for="app_lname">Last Name</label>
-                                    <input type="text" class="form-control" id="app_lname" placeholder="Your Last Name">
-                                </div>
-                            </div>
-                            <div class="row m0 input_row">
-                                <label for="app_email">Email Address</label>
-                                <input type="email" class="form-control" id="app_email" placeholder="Enter your Email Address">
-                            </div>
-                            <div class="row m0 input_row">
-                                <label for="app_phone">Phone Number</label>
-                                <input type="tel" class="form-control" id="app_phone" placeholder="Enter your Phone Number">
-                            </div>
-                            <div class="row m0 input_row">
-                                <label for="app_date">Booking Date</label>                                
-                                <div class="input-append date">
-                                    <input type="text" class="form-control" name="date" id="app_date" placeholder="Select the Appointment Date">
-                                    <span class="add-on"><i class="icon-th"></i></span>
-                                </div>
-                            </div>
-                            <div class="row m0 input_row">
-                                <label for="app_texts">Message</label>
-                                <textarea  id="app_texts" class="form-control" placeholder="Write down the Message"></textarea>
-                            </div>
-                            <input type="submit" class="form-control" value="book your appointment now">
-                        </div>
-                        <div class="row m0 form_footer">
-                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/call-now3.png" alt="">123 7890 456</a>
-                        </div>
-                    </form>
+                <?php echo do_shortcode('[contact-form-7 id="137" title="Agendamento de Exame"]'); ?>
             </div>
         </div>
     </div>
+
+     <?php wp_footer(); ?>
     
     <!--jQuery, Bootstrap and other vendor JS-->
     
@@ -174,6 +136,6 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <?php wp_footer(); ?>
+   
 </body>
 </html>

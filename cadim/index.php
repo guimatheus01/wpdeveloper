@@ -152,8 +152,8 @@
             <div class="row">
                 <div class="col-md-12 team_menu">
                     <div class="row titleRow text-left">
-                        <h5>Conheça Nosso</h5>
-                        <h2>Dr. Carlos</h2>
+                        <h5>Conheça Nossos</h5>
+                        <h2>Médicos</h2>
                     </div>
                 </div>
                <div class="col-md-12 team_descss">
@@ -174,6 +174,10 @@
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                     </ul> -->
+                                     <div class="col-xs-12 text-center">
+                                        <br><br>
+                                        <a href="<?php echo home_url('medicos' ); ?>" class="view_all">ver todos médicos</a>
+                                     </div>
                                 </div>
                             </div><!-- Doctor about-->
                         </div>
@@ -181,23 +185,5 @@
                 </div>
             </div>
         </div>
-    </section>
-        
-    <section class="row book_banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-9">
-                    <div class="row m0">
-                        <h3 class="bannerTitle">ONLINE HASSLE FREE Appointment BOOKING</h3>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia, ipsum eu vulputate pulvinar,</h5>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-md-3">
-                    <div class="row m0">
-                        <a href="#" data-toggle="modal" data-target="#appointmefnt_form_pop" class="view_all"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section>       
 <?php get_footer(); ?>

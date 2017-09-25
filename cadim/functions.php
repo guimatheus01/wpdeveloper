@@ -394,7 +394,7 @@ add_action( 'init', 'medicos', 0 );
 /**************** CONVENIOS ********************/
 /**********************************************/
 // Register Custom Post Type
-function convenio() {
+function convenios() {
     $labels = array(
         'name'                  => _x( 'Convênios', 'Post Type General Name', 'text_domain' ),
         'singular_name'         => _x( 'Convênios', 'Post Type Singular Name', 'text_domain' ),
@@ -428,9 +428,50 @@ function convenio() {
         'menu_icon'             => 'dashicons-grid-view',
         'capability_type'       => 'page',
     );
-    register_post_type( 'convenio', $args );
+    register_post_type( 'convenios', $args );
 }
-add_action( 'init', 'convenio', 0 );
+add_action( 'init', 'convenios', 0 );
+/************************************************/
+/**************** faq ********************/
+/**********************************************/
+// Register Custom Post Type
+function faq() {
+    $labels = array(
+        'name'                  => _x( 'FAQ', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'FAQ', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'FAQ', 'text_domain' ),
+        'all_items'             => __( 'Todos FAQ', 'text_domain' ),
+        'add_new_item'          => __( 'Adicionar FAQ', 'text_domain' ),
+        'add_new'               => __( 'Novo FAQ', 'text_domain' ),
+        'new_item'              => __( 'Novo FAQ', 'text_domain' ),
+        'edit_item'             => __( 'Editar FAQ', 'text_domain' ),
+        'update_item'           => __( 'Atualizar FAQ', 'text_domain' ),
+        'view_item'             => __( 'Ver FAQ', 'text_domain' ),
+        'view_items'            => __( 'Ver todos FAQ', 'text_domain' ),
+        'search_items'          => __( 'Pesquisar FAQ', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'FAQ', 'text_domain' ),
+        'description'           => __( 'Todos as FAQ do Cadim', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor'),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,        
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'menu_icon'             => 'dashicons-editor-help',
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'faq', $args );
+}
+add_action( 'init', 'faq', 0 );
 
 
 

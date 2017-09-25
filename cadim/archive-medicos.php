@@ -8,7 +8,7 @@ if (have_posts()) {  while (have_posts()) {  the_post();
         <div class="row m0 inner">
             <div class="container">
                 <div class="row">
-                    <h5><?php echo get_the_title(); ?></h5>
+                    <h5>Médicos</h5>
                     <h2>Equipe Experiente</h2>
                 </div>
             </div>
@@ -17,10 +17,13 @@ if (have_posts()) {  while (have_posts()) {  the_post();
     
     <section class="row breadcrumbRow">
         <div class="container">
+             <style>
+                .page_intro.row .inner:before{background: url('http://www.cadim.com.br/novo/wp-content/uploads/2017/09/GettyImages-520613914.jpg')!important;background-repeat: no-repeat !important;background-position: center center !important;background-size: cover !important;}
+            </style>
             <div class="row inner m0">
                 <ul class="breadcrumb">
                     <li><a href="<?php echo home_url(); ?>">Home</a></li>
-                    <li><?php echo get_the_title(); ?></li>
+                    <li>Médicos</li>
                 </ul>
             </div>
         </div>
@@ -43,6 +46,7 @@ if (have_posts()) {  while (have_posts()) {  the_post();
                             <div class="row m0 title_row">
                                 <h5><?php echo get_the_title(); ?></h5>
                                 <div class="row m0 pos"><?php echo get_field('cargo'); ?></div>
+                                <div class="row m0 pos"><small><?php echo get_field('especialização'); ?></small></div>
                             </div>
                         </a>
                     </div>
