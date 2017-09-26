@@ -185,7 +185,7 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Custom dropdown menu and navbar in walker class
  */
-require get_template_directory() . '/inc/BootstrapBasicMyWalkerNavMenu.php';
+require get_template_directory() . '/inc/WP_Bootstrap_Navwalker.php';
 require get_template_directory() . '/inc/wp_bootstrap_pagination.php';
 
 
@@ -472,6 +472,48 @@ function faq() {
     register_post_type( 'faq', $args );
 }
 add_action( 'init', 'faq', 0 );
+
+/************************************************/
+/**************** faq ********************/
+/**********************************************/
+// Register Custom Post Type
+function social() {
+    $labels = array(
+        'name'                  => _x( 'Rede Sociais', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Rede Social', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Rede Social', 'text_domain' ),
+        'all_items'             => __( 'Todos Rede Social', 'text_domain' ),
+        'add_new_item'          => __( 'Adicionar Rede Social', 'text_domain' ),
+        'add_new'               => __( 'Novo Rede Social', 'text_domain' ),
+        'new_item'              => __( 'Novo Rede Social', 'text_domain' ),
+        'edit_item'             => __( 'Editar Rede Social', 'text_domain' ),
+        'update_item'           => __( 'Atualizar Rede Social', 'text_domain' ),
+        'view_item'             => __( 'Ver Rede Social', 'text_domain' ),
+        'view_items'            => __( 'Ver todos Rede Social', 'text_domain' ),
+        'search_items'          => __( 'Pesquisar Rede Social', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'Rede Social', 'text_domain' ),
+        'description'           => __( 'Todos as Rede Social do Cadim', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title'),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,        
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'menu_icon'             => 'dashicons-share',
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'social', $args );
+}
+add_action( 'init', 'social', 0 );
 
 
 

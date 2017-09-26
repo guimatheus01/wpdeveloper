@@ -176,7 +176,7 @@
                                     </ul> -->
                                      <div class="col-xs-12 text-center">
                                         <br><br>
-                                        <a href="<?php echo home_url('medicos' ); ?>" class="view_all">ver todos médicos</a>
+                                        <a href="<?php echo home_url('medicos'); ?>" class="view_all">ver todos médicos</a>
                                      </div>
                                 </div>
                             </div><!-- Doctor about-->

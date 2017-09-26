@@ -125,12 +125,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- <a href="book-appointment.html" class="navbar-toggle visible-xs" data-toggle="modal" data-target="#appointmefnt_form_pop">book appointment</a> -->
+                <a class="navbar-toggle visible-xs" data-toggle="modal" data-target="#appointmefnt_form_pop">Agende Seu Exame</a>
             </div>
             
             <!-- Collect the nav links, forms, and other content for toggling -->            
             <div class="collapse navbar-collapse" id="main_nav"> 
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right hidden-xs">
                     <li class="hidden-xs book"><a href="#" data-toggle="modal" data-target="#appointmefnt_form_pop">Agende Seu Exame</a></li>
                 </ul>
                 <?php

@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-sm-4 col-md-3">
                     <div class="row m0">
-                        <a href="#appointment" class="view_all">Agende Agora !</a>
+                        <a data-toggle="modal" data-target="#appointmefnt_form_pop" class="view_all">Agende Agora !</a>
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-md-6 col-lg-5 footer_menuList">
-                    <div class="heading row m0"><img src="<?php echo get_template_directory_uri(); ?>/images/logo/1.png" alt=""></div>
+                    <div class="heading row m0"><img width="135px" src="<?php echo get_template_directory_uri(); ?>/img/logo-cadim-footer.png" alt="<?php echo(bloginfo('title')); ?>"></div>
                     <div class="row menuList">
                         <ul class="firstOrderList nav">
                             <li class="active"><a href="#">home</a></li>
@@ -49,15 +49,15 @@
                     <div class="row address m0">
                         <div class="media address_line">
                             <div class="media-left icon"><i class="fa fa-map-marker"></i></div>
-                            <div class="media-body address_text">Area  51 , Some near unknown, <br>USA 000000</div>
+                            <div class="media-body address_text">Av. Aclimação, N° 335 - Bosque da Saúde <br>Anexo Hospital São Mateus <br> Cuiabá - Mato Grosso</div>
                         </div>
                         <div class="media address_line">
                             <div class="media-left icon"><i class="fa fa-envelope"></i></div>
-                            <div class="media-body address_text">info@medicalprotheme.com</div>
+                            <div class="media-body address_text">comunicacao@cadim.com.br</div>
                         </div>
                         <div class="media address_line">
                             <div class="media-left icon"><i class="fa fa-phone"></i></div>
-                            <div class="media-body address_text">123 7890 456</div>
+                            <div class="media-body address_text">(65) 2121-6363</div>
                         </div>
                     </div>
                 </div>
@@ -74,12 +74,14 @@
             </div>
             <div class="row m0 footer_bottom">
                 <ul class="list-inline social_menu m0 fleft">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <?php
+                       $args = array( 'post_type' => 'social', 'showposts' => 4);
+                       $loop = new WP_Query( $args );
+                       while ( $loop->have_posts() ) : $loop->the_post();
+                        $title_icon = strtolower(get_the_title());
+                    ?>
+                    <li><a href="<?php echo get_field('link_da_rede_social') ?>" target="_blank"><i class="<?php echo get_field('icone_rede_social') ?>"></i></a></li>
+                    <?php endwhile; ?>
                 </ul>
                 <div class="fright copyright">&copy; <a href="index.html">medicalpro 2015</a>. Made with love for great people.</div>
             </div>
@@ -100,7 +102,10 @@
     
     <!--jQuery-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-2.1.3.min.js"></script>
-    
+
+     <!--Google Map-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2SagnuoBecVaTpQYOsLWw63Iq_o_No6Y"></script>
+
     <!--Bootstrap JS-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
     
@@ -126,6 +131,10 @@
     <!--Strella JS-->
     <script src="<?php echo get_template_directory_uri(); ?>/js/theme.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/revs.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/google-map.js"></script>
+
+
+
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
