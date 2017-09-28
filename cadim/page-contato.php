@@ -6,6 +6,7 @@ if (have_posts()) {  while (have_posts()) {  the_post();
 ?>
  <section class="row page_intro">
         <div class="row m0 inner">
+
             <div class="container">
                 <div class="row">
                     <h5><?php echo get_the_title(); ?></h5>
@@ -17,6 +18,9 @@ if (have_posts()) {  while (have_posts()) {  the_post();
     
     <section class="row breadcrumbRow">
         <div class="container">
+            <style>
+                .page_intro.row .inner:before{background: url(<?php echo get_the_post_thumbnail_url(); ?>)!important;background-repeat: no-repeat !important;background-position: center center !important;background-size: cover !important;}
+            </style>
             <div class="row inner m0">
                 <ul class="breadcrumb">
                     <li><a href="<?php echo home_url(); ?>">Home</a></li>

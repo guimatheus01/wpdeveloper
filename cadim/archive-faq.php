@@ -28,7 +28,7 @@
             <h5>tire todas suas</h5>
             <h2>Dúvidas Frequentes</h2>
         </div>
-        <div class="row">
+        <div class="">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <?php
                 $args = array( 'post_type' => 'faq', 'showposts' => -1);

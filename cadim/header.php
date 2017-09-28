@@ -137,7 +137,7 @@
                     wp_nav_menu( array(
                         'menu'              => 'primary',
                         'theme_location'    => 'primary',
-                        'depth'             => 2,
+                        'depth'             => 7,
                         'container'         => 'ul',
                         'container_class'   => 'collapse navbar-collapse',
                         'container_id'      => 'bs-example-navbar-collapse-1',

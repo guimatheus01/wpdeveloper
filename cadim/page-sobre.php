@@ -14,7 +14,7 @@ if (have_posts()) {  while (have_posts()) {  the_post();
             </div>
         </div>
     </section>
-+    <section class="row breadcrumbRow">
+    <section class="row breadcrumbRow">
         <div class="container">
             <div class="row inner m0">
                 <style>

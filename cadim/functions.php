@@ -517,6 +517,11 @@ add_action( 'init', 'social', 0 );
 
 
 
+function wpdocs_dequeue_script() {
+        wp_dequeue_script( 'jquery' );
+        wp_dequeue_script( 'bootstrap.min' ); 
+} 
+add_action( 'wp_print_scripts', 'wpdocs_dequeue_script', 100 );
 
 
 /************************************************/
