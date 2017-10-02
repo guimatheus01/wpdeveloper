@@ -303,6 +303,7 @@ button:hover{outline:none;text-decoration:none;-webkit-transition:all 300ms ease
 .col6{width:-webkit-calc((100% / 6) * 6);width:calc((100% / 6) * 6);}
 
 /*----------------------------------------------------------------*/
+.service_block{height: 310px;}
 .service_block_row{padding:90px 0 60px;background:#fff;}
 .service_block{text-align:center;margin:30px 0;padding:0 45px;}
 .service_block .icon{line-height:49px;margin-bottom:40px;}
@@ -390,7 +391,7 @@ button:hover{outline:none;text-decoration:none;-webkit-transition:all 300ms ease
 .who_weR .media .media-left{padding-right:0;}
 .who_weR .media .media-left a{display:block;width:263px;padding-right:30px;}
 .who_weR .media .media-left a img{width:100%;}
-.who_weR .media .media-body p{font-family:'Karla',sans-serif;font-size:16px;line-height:23px;color:#8595b1;font-weight:400;margin-bottom:0;margin-top:-7px;}
+.who_weR .media .media-body p{font-family:'Karla',sans-serif;font-size:16px;line-height:23px;color:#8595b1;font-weight:400;margin-bottom:0;margin-top:0px;}
 .our_depts_list{padding:50px 15px 20px;}
 .our_depts_list .depts_list li a{line-height:36px;display:block;font-family:'Karla',sans-serif;font-weight:bold;color:#0186d5;text-transform:uppercase;}
 .our_depts_list .depts_list li a i{margin-right:8px;}
@@ -422,7 +423,7 @@ button:hover{outline:none;text-decoration:none;-webkit-transition:all 300ms ease
 .team_section .tab-content p{font-size:16px;font-family:'Karla',sans-serif;color:#8595b1;line-height:25px;margin-bottom:35px;}
 .team_section.team_section_about{background:#e5f0fb;}
 .team_section_type2{padding:35px 0;}
-.team_section_type2 .team_member{margin:30px 0;}
+.team_section_type2 .team_member{margin:30px 0; height: 420px;}
 .team_section_type2 .team_member .title_row{padding:25px 0;}
 .team_section_type2 .team_member .title_row h5{margin:0 0 5px;line-height:1;font-size:16px;text-transform:uppercase;font-weight:bold;font-family:'Lato',sans-serif;color:#404d5f;}
 .team_section_type2 .team_member .title_row .pos{font-style:italic;color:#0186d5;font-family:'Lato',sans-serif;font-size:16px;line-height:1;font-weight:400;}
@@ -714,4 +715,13 @@ footer .footer_bottom .copyright a{text-transform:uppercase;color:#8595b1;}
 .menu-630 > select{height: 55px !important;}
 .onewave{width:40px;height:30px;background:url(../../img/onewave.png);display:inline-block;background-size:cover;margin-bottom:-10px;transition:all 0.3s;}
 .onewave:hover{width:98px;background-position-x:95px;transition:all 0.3s;transition:all 0.3s;}
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{display: inline-block !important}
+#return-to-top{position:fixed;bottom:20px;right:20px;background:rgb(0,0,0);background:rgba(35,34,118,0.5);width:50px;height:50px;display:block;text-decoration:none;-webkit-border-radius:35px;-moz-border-radius:35px;border-radius:35px;display:none;-webkit-transition:all 0.3s linear;-moz-transition:all 0.3s ease;-ms-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
+#return-to-top i{color:#fff;margin:0;position:relative;left:16px;top:8px;font-size:29px;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-ms-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease;}
+#return-to-top:hover{background:rgb(35, 34, 118);}
+#return-to-top:hover i{color:#fff;top:5px;}
+
+
+/* Extra Things */
+/* body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;} */
 /*Service Tab End*/

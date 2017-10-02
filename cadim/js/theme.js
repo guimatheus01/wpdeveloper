@@ -134,6 +134,9 @@
         directionNav: false,
         controlNav: false
     })
+
+
+
     
 })(jQuery)
 

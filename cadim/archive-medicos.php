@@ -2,7 +2,6 @@
 
 get_header(); /* Template Name: Medicos */ 
 
-if (have_posts()) {  while (have_posts()) {  the_post();
 ?>
  <section class="row page_intro">
         <div class="row m0 inner">
@@ -56,4 +55,4 @@ if (have_posts()) {  while (have_posts()) {  the_post();
         </div>
     </section>
 
-<?php }; }; get_footer(); ?>
+<?php get_footer(); ?>

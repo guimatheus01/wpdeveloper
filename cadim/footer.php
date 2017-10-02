@@ -94,6 +94,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     
     <div class="modal fade" id="appointmefnt_form_pop" tabindex="-1" role="dialog" aria-labelledby="appointmefnt_form_pop">
         <div class="modal-dialog modal-sm" role="document">
