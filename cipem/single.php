@@ -37,7 +37,7 @@
                                <ul class="blog-grid-option">
                                     <li>
                                         <i class="fa fa-calendar-o"></i>
-                                        <time><?php the_modified_date(); ?></time>
+                                        <time><?php echo get_the_date(); ?></time>
                                     </li>
                                     <li>
                                         <i class="fa fa-user"></i>
