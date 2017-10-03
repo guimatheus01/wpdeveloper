@@ -56,5 +56,12 @@ if ( $product->is_in_stock() ) : ?>
 		<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 		<div class="for_message"></div>
 	</div>
+	<?php echo do_shortcode('[floris_accordion_shortcode list_type2="false"][floris_accordion_content_shortcode title="Medidas e Tamanhos"]<div class="table-responsive"><table class="table table-hover"><tr><th></th><th colspan="2">P</th><th colspan="2">M</th><th colspan="2">G</th></tr><tr style="background-color: #E0E0E0;" ><td><strong>MEDIDAS</strong></td><td>38</td><td>40</td><td>42</td><td>44</td><td>46</td><td>48</td></tr><tr><td>Busto</td><td>86</td><td>90</td><td>94</td><td>98</td><td>102</td><td>106</td></tr><tr><td>Cintura</td><td>64</td><td>68</td><td>72</td><td>76</td><td>80</td><td>84</td></tr><tr><td>Quadril</td><td>92</td><td>96</td><td>100</td><td>104</td><td>108</td><td>112</td></tr></table></div>[/floris_accordion_content_shortcode]') ?>
+	<br><br>
 </form>
+
+
 <?php endif; ?>
+
+
+

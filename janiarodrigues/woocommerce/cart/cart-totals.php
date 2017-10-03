@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php if ( wc_coupons_enabled() && ( floris_get_option('cart_page') == 2 ) ) { ?>
         <div class="coupon-wrap">
             <div class="coupon-inner">
-                <a href="#" id="coupon-btn"><?php esc_html_e( 'Enter Coupon', 'floris' ); ?></a>
+                <a href="#" id="coupon-btn"><?php esc_html_e( 'Cupom', 'floris' ); ?></a>
 				<div class="coupon">
 					<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Código do Cupom', 'floris' ); ?>" />
 					<input type="submit" class="button button-style braun" name="apply_coupon" value="<?php esc_attr_e( 'Aplicar Cupom', 'floris' ); ?>" />

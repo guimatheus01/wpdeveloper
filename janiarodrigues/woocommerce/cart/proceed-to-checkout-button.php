@@ -24,5 +24,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <a href="<?php print esc_url( wc_get_checkout_url() ) ;?>" class="checkout-button button alt wc-forward button-style braun">
-	<?php esc_html_e( 'Fazer o Check-out', 'floris' ); ?>
+	<?php esc_html_e( 'Fazer o Checkout', 'floris' ); ?>
 </a>

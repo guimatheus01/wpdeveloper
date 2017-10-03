@@ -39,7 +39,7 @@ if( $available_variations ){
 <form class="variations_form cart" method="post" enctype='multipart/form-data' data-product_id="<?php print wp_kses_post( absint( $product->get_id() ) ); ?>" data-product_variations="<?php print wp_kses_post( htmlspecialchars( json_encode( $available_variations ) ) )?>">
 	<?php do_action( 'woocommerce_before_variations_form' ); ?>
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
-		<p class="stock out-of-stock"><?php esc_html_e( 'This product is currently out of stock and unavailable.', 'floris' ); ?></p>
+		<p class="stock out-of-stock"><?php esc_html_e( 'Este produto está atualmente fora de estoque e indisponível', 'floris' ); ?></p>
 	<?php else : ?>
 		<table class="variations" cellspacing="0">
 			<tbody>
@@ -50,7 +50,7 @@ if( $available_variations ){
 							<?php
 								$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) : $product->get_variation_default_attribute( $attribute_name );
 								wc_dropdown_variation_attribute_options( array( 'options' => $options, 'attribute' => $attribute_name, 'product' => $product, 'selected' => $selected ) );
-								print end( $attribute_keys ) === $attribute_name ? apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear Selection', 'floris' ) . '</a>' ) : '';
+								print end( $attribute_keys ) === $attribute_name ? apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Limpar Seleção', 'floris' ) . '</a>' ) : '';
 							?>
 						</td>
 					</tr>

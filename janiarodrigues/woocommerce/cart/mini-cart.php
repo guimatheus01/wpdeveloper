@@ -93,7 +93,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="check-pay">
 			<div class="price-total font-fam-2"><?php esc_html_e( 'Subtotal', 'floris' ); ?>:<span><?php print WC()->cart->get_cart_subtotal(); ?></span></div>
 			<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
-			<a href="<?php print esc_url( wc_get_cart_url() ); ?>" class="button-style braun get_cart"><span><?php esc_html_e( 'Ver Carrinho', 'floris' ); ?></span></a>
+			<a href="<?php print esc_url( wc_get_cart_url() ); ?>" class="button-style braun get_cart"><span><?php esc_html_e( 'Ver Cesto', 'floris' ); ?></span></a>
 			<a href="<?php print esc_url( wc_get_checkout_url() ); ?>" class="button-style braun get_checkout"><span><?php esc_html_e( 'Checkout', 'floris' ); ?></span></a>
 		</div>
 	</div>

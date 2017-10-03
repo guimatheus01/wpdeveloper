@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?> 
 <form action="<?php print esc_url( wc_get_cart_url() ); ?>" method="post" class="cart_form">
 	<div class="col-md-8 col-xs-12">
-		<h2 class="form-cart-title"><?php esc_html_e( 'Carrinho de compras', 'floris' ); ?></h2>
+		<h2 class="form-cart-title"><?php esc_html_e( 'Cesto de compras', 'floris' ); ?></h2>
 		<?php do_action( 'woocommerce_before_cart_table' ); ?>
 		<table class="shop_table shop_table_responsive cart" cellspacing="0">
 			<tbody>
@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<tr>
 					<td colspan="6" class="actions">
 						<a href="<?php the_permalink( wc_get_page_id( 'shop' ) ); ?>"><?php esc_attr_e( 'Continue Comprando', 'floris' ); ?></a>
-						<input type="submit" class="button button-style braun" name="update_cart" value="<?php esc_attr_e( 'Atualizar Carrinho', 'floris' ); ?>" />
+						<input type="submit" class="button button-style braun" name="update_cart" value="<?php esc_attr_e( 'Atualizar Cesto', 'floris' ); ?>" />
 						<?php do_action( 'woocommerce_cart_actions' ); ?>
 						<?php wp_nonce_field( 'woocommerce-cart' ); ?>
 					</td>

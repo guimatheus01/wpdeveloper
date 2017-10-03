@@ -28,5 +28,5 @@ if ( ! defined( 'ABSPATH' ) ) {
     </div>
 </script>
 <script type="text/template" id="tmpl-unavailable-variation-template">
-    <p><?php esc_html_e( 'Sorry, this product is unavailable. Please choose a different combination.', 'floris' ); ?></p>
+    <p><?php esc_html_e( 'Desculpe, este produto não está disponível. Escolha uma combinação diferente.', 'floris' ); ?></p>
 </script>
