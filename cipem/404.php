@@ -1,14 +1,5 @@
-<?php
-/** 
- * File not found or web page not found template file.
- * 
- * @package bootstrap-basic4
- */
-
-
-// begins template. -------------------------------------------------------------------------
-get_header();?>
-<!--// SubHeader \\-->
+<?php get_header();?>
+        <!--// SubHeader \\-->
         <div class="environment-subheader">
             <span class="subheader-transparent"></span>
             <div class="container">
