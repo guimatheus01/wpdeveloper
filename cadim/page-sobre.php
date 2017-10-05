@@ -101,7 +101,7 @@ if (have_posts()) {  while (have_posts()) {  the_post();
                             <div role="tabpanel" class="tab-pane media active" id="doctor1">
                                 <div class="media-left media-bottom">
                                     <br>
-                                    <a><img src="<?php echo get_template_directory_uri(); ?>/images/pages/doctors/1.jpg" alt="" class="img-responsive"></a>
+                                    <a><img src="../wp-content/uploads/2017/09/medico.jpg" alt="" class="img-responsive"></a>
                                 </div>
                                 <div class="media-body">
                                     <div class="row titleRow text-left">

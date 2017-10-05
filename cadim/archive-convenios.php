@@ -35,7 +35,7 @@
                 while ( $loop->have_posts() ) : $loop->the_post();
             ?>
             <a href="<?php echo(get_field('link_do_convênio')); ?>" target="_blank">
-                <div class="col-sm-6 col-md-4 service_block">                
+                <div class="col-sm-6 col-md-4 service_block height-conv">                
                     <div class="row m0 inner box-convenios">
                         <div class="row icon"><img src="<?php echo get_the_post_thumbnail_url(); ?>" class="img-responsive" alt="<?php echo get_the_title(); ?>"></div>
                         <a><h4><?php echo strtoupper(get_the_title()); ?></h4></a>

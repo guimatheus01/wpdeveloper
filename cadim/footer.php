@@ -66,15 +66,15 @@
                     <div class="heading row m0"></div>
                     <div class="row address m0">
                         <div class="media address_line">
-                            <div class="media-left icon"><i class="fa fa-map-marker"></i></div>
+                            <div class="media-left icon hidden-xs"><i class="fa fa-map-marker"></i></div>
                             <div class="media-body address_text">Av. Aclimação, N° 335 - Bosque da Saúde <br>Anexo Hospital São Mateus <br> Cuiabá - Mato Grosso</div>
                         </div>
                         <div class="media address_line">
-                            <div class="media-left icon"><i class="fa fa-envelope"></i></div>
+                            <div class="media-left icon hidden-xs"><i class="fa fa-envelope"></i></div>
                             <div class="media-body address_text">comunicacao@cadim.com.br</div>
                         </div>
                         <div class="media address_line">
-                            <div class="media-left icon"><i class="fa fa-phone"></i></div>
+                            <div class="media-left icon hidden-xs"><i class="fa fa-phone"></i></div>
                             <div class="media-body address_text">(65) 2121-6363</div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                     <li><a href="<?php echo get_field('link_da_rede_social') ?>" target="_blank"><i class="fa <?php echo get_field('icone_rede_social') ?>"></i></a></li>
                     <?php endwhile; ?>
                 </ul>
-                <div class="fright copyright">&copy; <a><?php echo bloginfo('title') ?> | <?php echo date('Y') ?></a>. Todos Direitos Reservados. -  <a class="onewave" href="http://www.onewave.com.br/" target="_blank" title="A OneWave é uma empresa de soluções completas e personalizadas na web, para que sua empresa posicione-se no topo do mercado virtual."></a></div>
+                <div class="fright copyright">&copy; <a><?php echo bloginfo('title') ?> <span class="hidden-xs">|</span> <span class="visible-xs"></span> <?php echo date('Y') ?></a>. Todos Direitos Reservados.  <span class="hidden-xs">-</span> <span class="visible-xs"></span>  <a class="onewave" href="http://www.onewave.com.br/" target="_blank" title="A OneWave é uma empresa de soluções completas e personalizadas na web, para que sua empresa posicione-se no topo do mercado virtual."></a></div>
             </div>
         </div>
     </footer>

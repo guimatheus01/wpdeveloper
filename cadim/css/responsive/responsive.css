@@ -337,15 +337,19 @@
     footer .newsletter_form2 .form_inputs .input_row:first-child .col-xs-6 + .col-xs-6{border-left:1px solid #48a8d4;}
     footer .footer_bottom .copyright{width:100%;line-height:40px;}
   }
-  @media (max-width:600px){
-    footer .footer_bottom ul{width:100%;}
+  @media (max-width:767px){
+    footer .footer_bottom ul{width:100%; margin-bottom: 25px;}
     footer .footer_bottom .copyright{width:100%;line-height:40px;}
-  }
-  @media (max-width:500px){
     footer .footer_menuList .menuList ul{width:100%;padding-left:0;}
     footer .footer_menuList .menuList ul li a{line-height:30px;}
     footer .footer_menuList .menuList ul:nth-child(2){border:none;}
+    footer .footer_bottom ul li{padding:0;float:left;margin:0;margin-left:0!important;width:33%}
   }
+ /*  @media (max-width:500px){
+    footer .footer_menuList .menuList ul{width:100%;padding-left:0;}
+    footer .footer_menuList .menuList ul li a{line-height:30px;}
+    footer .footer_menuList .menuList ul:nth-child(2){border:none;}
+  } */
 
   /*----------------------------------------------------------------*/
   @media (max-width:1199px){
@@ -412,8 +416,7 @@
   }
   @media (max-width:480px){
     .doctor_details .doctor_about .social_list{float:left;width:100%;margin-top:20px;}
-  }
-
+    .pagination>li>a,.pagination>li>span{padding:6px 11px!important;margin:0;min-width:0!important;margin-left:0!important;margin-right:0!important}}
   /*----------------------------------------------------------------*/
   @media (max-width:1199px){
     .timeTableFilters li{margin-bottom:10px;}
@@ -499,7 +502,7 @@
         .team_section > .container > .row .team_menu,
         .team_section > .container > .row .team_descss{width:100%;}
         .team_section .nav-tabs{}
-        .team_section .nav-tabs .media{width:235px;height:70px;}
+        .team_section .nav-tabs .media{height:70px;text-align: justify;} 
         .team_section .nav-tabs .media + .media{margin-top:0;}
         .team_section .nav-tabs + .view_all{display:none;}
         .team_section .tab-content .titleRow{margin-top:50px;}
